@@ -1,4 +1,14 @@
-# Varsync
+# Kroma (Figma)
+
+A Figma plugin that exports color styles and variables to Framer via the Kroma bridge.
+
+## How it works
+
+1. Open the plugin in any Figma file
+2. Select the color styles or variables you want to export
+3. Map your light and dark modes for variable collections
+4. Click Copy to Clipboard
+5. Paste into the Kroma Framer plugin to import
 
 ## Development guide
 
@@ -9,14 +19,13 @@
 - [Node.js](https://nodejs.org) – v22
 - [Figma desktop app](https://figma.com/downloads/)
 
+
 ### Build the plugin
 
 To build the plugin:
-
 ```
 $ npm run build
 ```
-
 This will generate a [`manifest.json`](https://figma.com/plugin-docs/manifest/) file and a `build/` directory containing the JavaScript bundle(s) for the plugin.
 
 To watch for code changes and rebuild the plugin automatically:
